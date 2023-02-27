@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DI05_Modelo.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio
         public MainWindow()
         {
             InitializeComponent();
+            CitasContext context = new CitasContext();
+            Cliente cliente = new Cliente()
+            {
+                Id = 1,
+                Nombre = "Enrique",
+                Apellidos = "Fernandez Chacon",
+                Email = "di@dam.com",
+                Telefono = "695665665"
+            };
+            context.Clientes.Add(cliente);
+            context.SaveChanges();
         }
     }
 }
