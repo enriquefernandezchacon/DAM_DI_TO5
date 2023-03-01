@@ -13,6 +13,8 @@ public partial class AplicacionTratamiento
 
     public int IdTrabajador { get; set; }
 
+    public int Coste { get; set; }
+
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
 
     public virtual Empleado IdTrabajadorNavigation { get; set; } = null!;

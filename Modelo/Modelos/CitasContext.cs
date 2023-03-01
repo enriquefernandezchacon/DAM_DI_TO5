@@ -34,6 +34,7 @@ public partial class CitasContext : DbContext
         modelBuilder.Entity<AplicacionTratamiento>(entity =>
         {
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Coste).HasColumnName("coste");
             entity.Property(e => e.IdCliente).HasColumnName("id_cliente");
             entity.Property(e => e.IdTrabajador).HasColumnName("id_trabajador");
             entity.Property(e => e.IdTratamiento).HasColumnName("id_tratamiento");
