@@ -14,4 +14,8 @@ public partial class Tratamiento
     public string Descripcion { get; set; } = null!;
 
     public int Precio { get; set; }
+
+    public virtual ICollection<AplicacionTratamiento> AplicacionTratamientos { get; } = new List<AplicacionTratamiento>();
+
+    public virtual ICollection<Cita> Cita { get; } = new List<Cita>();
 }
