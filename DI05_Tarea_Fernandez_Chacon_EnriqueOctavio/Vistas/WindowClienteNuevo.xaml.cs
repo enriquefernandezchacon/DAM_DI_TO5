@@ -66,6 +66,10 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas
             {
                 MessageBox.Show("Debes completar el campo email", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            else if (!Regex.IsMatch(TextBoxEmail.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
+            {
+                MessageBox.Show("El email no es válido", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         //Comprobacion de telefono
@@ -75,6 +79,9 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas
             if (string.IsNullOrEmpty(TextBoxTelefono.Text))
             {
                 MessageBox.Show("Debes completar el campo telefono", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            } else if (!Regex.IsMatch(TextBoxTelefono.Text, @"^[0-9]{9}$"))
+            {
+                MessageBox.Show("El telefono no es válido", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

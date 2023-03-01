@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace DI05_Modelo.Modelos
 {
@@ -24,10 +25,15 @@ namespace DI05_Modelo.Modelos
                     case "Email":
                         if (string.IsNullOrEmpty(Email))
                             result = "El email no puede estar vacío";
+                        //Comprobar email
+                        else if (!Regex.IsMatch(Email, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"))
+                            result = "El email no es válido";
                         break;
                     case "Telefono":
                         if (string.IsNullOrEmpty(Telefono))
                             result = "El teléfono no puede estar vacío";
+                        else if (!Regex.IsMatch(Telefono, @"^[0-9]{9}$"))
+                            result = "El teléfono no es válido";
                         break;
                 }
                 return result;
