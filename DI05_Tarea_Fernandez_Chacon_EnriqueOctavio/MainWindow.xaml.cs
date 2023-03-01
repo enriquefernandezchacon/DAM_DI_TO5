@@ -1,4 +1,6 @@
 ﻿using DI05_Modelo.Modelos;
+using DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Services;
+using DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,20 +23,36 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CitasContext context;
         public MainWindow()
         {
             InitializeComponent();
-            CitasContext context = new CitasContext();
-            Cliente cliente = new Cliente()
-            {
-                Id = 1,
-                Nombre = "Enrique",
-                Apellidos = "Fernandez Chacon",
-                Email = "di@dam.com",
-                Telefono = "695665665"
-            };
-            context.Clientes.Add(cliente);
-            context.SaveChanges();
+            context = new CitasContext();
         }
+
+        public void VerClientes_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void NuevaCita_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void NuevoCliente_Click(object sender, RoutedEventArgs e)
+        {
+            WindowClienteNuevo windowClienteNuevo = new WindowClienteNuevo(context);
+            windowClienteNuevo.Owner = this;
+            Hide();
+            windowClienteNuevo.Show();
+        }
+
+        private void AcercaDe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Aplicación de gestión de citas creada por Enrique Octavio Fernández Chacón para la tarea online 5 de Diseño de Interfaces", "Acerca de", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+
     }
 }

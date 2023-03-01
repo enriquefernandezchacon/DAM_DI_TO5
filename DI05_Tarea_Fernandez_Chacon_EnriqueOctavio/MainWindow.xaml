@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DI05_Tarea_Fernandez_Chacon_EnriqueOctavio"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Gestión de citas" Height="450" Width="800">
     <Grid>
-
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Citas">
+                <MenuItem Header="Nueva cita..." Click="NuevaCita_Click"/>
+            </MenuItem>
+            <MenuItem Header="Clientes">
+                <MenuItem Header="Ver clientes..." Click="VerClientes_Click"/>
+                <MenuItem Header ="Nuevo cliente..." Click="NuevoCliente_Click"/>
+            </MenuItem>
+            <MenuItem Header="Ayuda">
+                <MenuItem Header="Acerca de..." Click="AcercaDe_Click"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
