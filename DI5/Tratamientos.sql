@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].Tratamientos(
-	[id] INT NOT NULL, 
+	[id] INT IDENTITY (1, 1) NOT NULL, 
     [nombre] VARCHAR(50) NOT NULL, 
     [tipo] VARCHAR(150) NOT NULL,
     [descripcion] VARCHAR(200) NOT NULL,

@@ -33,9 +33,7 @@ public partial class CitasContext : DbContext
     {
         modelBuilder.Entity<AplicacionTratamiento>(entity =>
         {
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdCliente).HasColumnName("id_cliente");
             entity.Property(e => e.IdTrabajador).HasColumnName("id_trabajador");
             entity.Property(e => e.IdTratamiento).HasColumnName("id_tratamiento");
@@ -58,9 +56,7 @@ public partial class CitasContext : DbContext
 
         modelBuilder.Entity<Cita>(entity =>
         {
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Fecha)
                 .HasColumnType("date")
                 .HasColumnName("fecha");
@@ -89,9 +85,7 @@ public partial class CitasContext : DbContext
 
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Apellidos)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -112,9 +106,7 @@ public partial class CitasContext : DbContext
 
         modelBuilder.Entity<Empleado>(entity =>
         {
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Apellidos)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -143,9 +135,7 @@ public partial class CitasContext : DbContext
 
         modelBuilder.Entity<Tratamiento>(entity =>
         {
-            entity.Property(e => e.Id)
-                .ValueGeneratedNever()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Descripcion)
                 .HasMaxLength(200)
                 .IsUnicode(false)

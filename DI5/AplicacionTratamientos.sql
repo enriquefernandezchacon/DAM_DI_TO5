@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].AplicacionTratamientos(
-	[id] INT NOT NULL, 
+	[id] INT IDENTITY (1, 1) NOT NULL, 
 	[id_cliente] INT NOT NULL,
 	[id_tratamiento] INT NOT NULL,
 	[id_trabajador] INT NOT NULL,

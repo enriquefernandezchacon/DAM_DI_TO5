@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].Citas(
-	[id] INT NOT NULL, 
+	[id] INT IDENTITY (1, 1) NOT NULL, 
     [fecha] DATE NOT NULL,
     [hora] TIME NOT NULL,
     [forma_pago] VARCHAR(50) NOT NULL,

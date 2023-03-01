@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].Clientes(
-	[id] INT NOT NULL, 
+	[id] INT IDENTITY (1, 1) NOT NULL, 
     [nombre] VARCHAR(50) NOT NULL, 
     [apellidos] VARCHAR(100) NOT NULL,
     [email] VARCHAR(100) NOT NULL,
