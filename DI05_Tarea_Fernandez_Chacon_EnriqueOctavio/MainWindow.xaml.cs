@@ -42,10 +42,7 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio
 
         private void NuevoCliente_Click(object sender, RoutedEventArgs e)
         {
-            WindowClienteNuevo windowClienteNuevo = new WindowClienteNuevo(context);
-            windowClienteNuevo.Owner = this;
-            Hide();
-            windowClienteNuevo.Show();
+
         }
 
         private void AcercaDe_Click(object sender, RoutedEventArgs e)

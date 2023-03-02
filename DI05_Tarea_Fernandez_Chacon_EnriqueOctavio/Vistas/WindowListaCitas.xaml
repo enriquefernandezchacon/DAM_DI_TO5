@@ -1,0 +1,27 @@
+﻿<Window x:Class="DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas.WindowListaCitas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas"
+        mc:Ignorable="d"
+        Title="Lista de Citas" Height="400" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Lista de Citas" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,20,0,20" FontSize="24" FontWeight="Bold"/>
+        <DataGrid Grid.Row="1" x:Name="DataGridCitas" ItemsSource="{Binding Path=Citas}" Margin="20" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Fecha" Binding="{Binding Path=Fecha}" Width="*"/>
+                <DataGridTextColumn Header="Hora" Binding="{Binding Path=Hora}" Width="*"/>
+                <DataGridTextColumn Header="Forma de pago" Binding="{Binding Path=FormaPago}" Width="*"/>
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Path=Cliente.NombreCompleto}" Width="*"/>
+                <DataGridTextColumn Header="Tratamiento" Binding="{Binding Path=Tratamiento.Nombre}" Width="*"/>
+                <DataGridTextColumn Header="Observaciones" Binding="{Binding Path=Observaciones}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

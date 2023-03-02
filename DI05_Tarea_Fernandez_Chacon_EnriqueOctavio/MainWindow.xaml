@@ -5,19 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DI05_Tarea_Fernandez_Chacon_EnriqueOctavio"
         mc:Ignorable="d"
-        Title="Gestión de citas" Height="450" Width="800">
+        Title="Gestión de la Clínica" Height="400" Width="800"
+        ResizeMode="NoResize">
     <Grid>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Citas">
-                <MenuItem Header="Nueva cita..." Click="NuevaCita_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="logo_clinica.png" Width="100" Height="100" Margin="10"/>
+        <Label Grid.Row="1" Content="Bienvenido a la Clínica" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
+        <Menu Grid.Row="2">
+            <MenuItem Header="_Clientes">
+                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoClienteCommand}"/>
+                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaClientesCommand}"/>
             </MenuItem>
-            <MenuItem Header="Clientes">
-                <MenuItem Header="Ver clientes..." Click="VerClientes_Click"/>
-                <MenuItem Header ="Nuevo cliente..." Click="NuevoCliente_Click"/>
+            <MenuItem Header="_Citas">
+                <MenuItem Header="_Nueva" Command="{Binding Path=AbrirFormularioNuevaCitaCommand}"/>
+                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaCitasCommand}"/>
             </MenuItem>
-            <MenuItem Header="Ayuda">
-                <MenuItem Header="Acerca de..." Click="AcercaDe_Click"/>
+            <MenuItem Header="_Tratamientos">
+                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoTratamientoCommand}"/>
+                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaTratamientosCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Empleados">
+                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoEmpleadoCommand}"/>
+                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaEmpleadosCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Aplicaciones de Tratamiento">
+                <MenuItem Header="_Nueva" Command="{Binding Path=AbrirFormularioNuevaAplicacionTratamientoCommand}"/>
+                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaAplicacionesTratamientoCommand}"/>
             </MenuItem>
         </Menu>
+        <Frame Grid.Row="1" Margin="20" Source="{Binding Path=PaginaActual}"/>
     </Grid>
 </Window>
