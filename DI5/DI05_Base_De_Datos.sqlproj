@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{fa61a2ab-8a96-4270-a5bc-851b61cd2bcc}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath />
     <RootNamespace>DI5</RootNamespace>
@@ -62,7 +62,7 @@
     <Build Include="Citas.sql" />
     <Build Include="Empleados.sql" />
     <Build Include="AplicacionTratamientos.sql" />
-    <Build Include="CargaInicial\Carga.AplicacionTratamientos.sql" />
+    <None Include="CargaInicial\Carga.AplicacionTratamientos.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="CargaInicial\Carga.Clientes.sql" />

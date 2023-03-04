@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI05_Tarea_Fernandez_Chacon_EnriqueOctavio", "DI05_Tarea_Fernandez_Chacon_EnriqueOctavio\DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.csproj", "{85745550-0450-4396-9B44-4F03EF4D8E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI05_Tarea_Fernandez_Chacon_EnriqueOctavio", "DI05_Tarea_Fernandez_Chacon_EnriqueOctavio\DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.csproj", "{85745550-0450-4396-9B44-4F03EF4D8E3D}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DI05_Base_De_Datos", "DI5\DI05_Base_De_Datos.sqlproj", "{FA61A2AB-8A96-4270-A5BC-851B61CD2BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI05_Modelo", "Modelo\DI05_Modelo.csproj", "{7753AE1C-3EAA-40FF-9D10-E1AF93DA1DA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DI05_Modelo", "Modelo\DI05_Modelo.csproj", "{7753AE1C-3EAA-40FF-9D10-E1AF93DA1DA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
