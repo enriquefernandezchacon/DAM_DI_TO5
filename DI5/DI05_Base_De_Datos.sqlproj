@@ -9,8 +9,7 @@
     <ProjectGuid>{fa61a2ab-8a96-4270-a5bc-851b61cd2bcc}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>DI5</RootNamespace>
     <AssemblyName>DI5</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -56,6 +54,7 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="CargaInicial" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Clientes.sql" />
@@ -63,5 +62,12 @@
     <Build Include="Citas.sql" />
     <Build Include="Empleados.sql" />
     <Build Include="AplicacionTratamientos.sql" />
+    <Build Include="CargaInicial\Carga.AplicacionTratamientos.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CargaInicial\Carga.Clientes.sql" />
+    <None Include="CargaInicial\Carga.Empleados.sql" />
+    <None Include="CargaInicial\Carga.Tratamientos.sql" />
+    <None Include="CargaInicial\Carga.Citas.sql" />
   </ItemGroup>
 </Project>

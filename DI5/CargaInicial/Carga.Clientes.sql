@@ -1,0 +1,22 @@
+﻿INSERT INTO [dbo].Clientes ([nombre], [apellidos], [email], [telefono])
+VALUES 
+    ('Juan', 'García Martínez', 'juangarcia@gmail.com', '623 456 789'),
+    ('María', 'López Fernández', 'marialopez@hotmail.com', '634 567 890'),
+    ('Pablo', 'González García', 'pablogonzalez@gmail.com', '652 345 678'),
+    ('Sofía', 'Martínez Ruiz', 'sofiamartinez@gmail.com', '674 567 890'),
+    ('David', 'Sánchez Pérez', 'davidsanchez@hotmail.com', '690 345 678'),
+    ('Lucía', 'Gómez Torres', 'luciagomez@gmail.com', '612 345 678'),
+    ('Carlos', 'Ruiz Sánchez', 'carlosruiz@hotmail.com', '634 567 890'),
+    ('Carmen', 'García Fernández', 'carmengarcia@gmail.com', '656 345 678'),
+    ('Javier', 'López Rodríguez', 'javierlopez@hotmail.com', '678 567 890'),
+    ('Lorena', 'González García', 'lorenagonzalez@gmail.com', '610 345 678'),
+    ('Pedro', 'Martínez Ruiz', 'pedromartinez@hotmail.com', '632 567 890'),
+    ('Ana', 'Sánchez Pérez', 'anasanchez@gmail.com', '654 345 678'),
+    ('Marcos', 'Gómez Torres', 'marcosgomez@hotmail.com', '676 567 890'),
+    ('Alicia', 'Ruiz Sánchez', 'aliciaruiz@gmail.com', '698 345 678'),
+    ('Santiago', 'García Fernández', 'santiagogarcia@hotmail.com', '610 567 890'),
+    ('Raquel', 'López Rodríguez', 'raquellopez@gmail.com', '632 345 678'),
+    ('Adrián', 'González García', 'adriangonzalez@hotmail.com', '654 567 890'),
+    ('Isabel', 'Martínez Ruiz', 'isabelmartinez@gmail.com', '676 345 678'),
+    ('Jorge', 'Sánchez Pérez', 'jorgesanchez@hotmail.com', '698 567 890'),
+    ('Cristina', 'Gómez Torres', 'cristinagomez@gmail.com', '610 345 678');
