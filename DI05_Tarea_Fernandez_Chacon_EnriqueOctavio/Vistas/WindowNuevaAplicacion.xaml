@@ -8,7 +8,7 @@
         Closed="Window_Closed"
         Title="Nueva Aplicación de Tratamiento" Height="auto" Width="auto"
         ResizeMode="NoResize">
-    <Grid Validation.Error="Validation_Error" Margin="20,20,20,20">
+    <Grid Margin="20,20,20,20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -22,14 +22,14 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Column="0" Grid.ColumnSpan="2" Content="Nueva Aplicación de Tratamiento:" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="24" FontWeight="Bold"/>
         <Label Grid.Row="1" Grid.Column="0" Content="ID Cliente:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxIdCliente" ToolTip="Introduzca el ID del cliente" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdCliente, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" LostFocus="TextBoxIdCliente_LostFocus"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxIdCliente" ToolTip="Introduzca el ID del cliente" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdCliente, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" />
         <Label Grid.Row="2" Grid.Column="0" Content="ID Tratamiento:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBoxIdTratamiento" ToolTip="Introduzca el ID del tratamiento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdTratamiento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" LostFocus="TextBoxIdTratamiento_LostFocus"/>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBoxIdTratamiento" ToolTip="Introduzca el ID del tratamiento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdTratamiento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" />
         <Label Grid.Row="3" Grid.Column="0" Content="ID Trabajador:" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
-        <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBoxIdTrabajador" ToolTip="Introduzca el ID del trabajador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdTrabajador, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" LostFocus="TextBoxIdTrabajador_LostFocus"/>
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBoxIdTrabajador" ToolTip="Introduzca el ID del trabajador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=IdTrabajador, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True"/>
         <Label Grid.Row="4" Grid.Column="0" Content="Coste:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBoxCoste" ToolTip="Introduzca el coste de la aplicación" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=Coste, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True" LostFocus="TextBoxCoste_LostFocus"/>
-        <Button Grid.Row="5" Grid.Column="0" x:Name="btAceptar" Click="BTAceptarClick" ToolTip="Crear una nueva aplicación de tratamiento" Content="Crear" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Padding="10" Background="#2196F3" Foreground="White"/>
-        <Button Grid.Row="5" Grid.Column="1" x:Name="btCancelar" Click="BTCancelarClick" ToolTip="Cancelar y salir" Content="Cancelar" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" Padding="10" Background="Gray" Foreground="White"/>
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBoxCoste" ToolTip="Introduzca el coste de la aplicación" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" FontSize="16" TextWrapping="Wrap" Text="{Binding Path=Coste, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SpellCheck.IsEnabled="True"/>
+        <Button Grid.Row="5" Grid.Column="0" x:Name="btAceptar"  ToolTip="Crear una nueva aplicación de tratamiento" Content="Crear" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Padding="10" Background="#2196F3" Foreground="White"/>
+        <Button Grid.Row="5" Grid.Column="1" x:Name="btCancelar" ToolTip="Cancelar y salir" Content="Cancelar" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="16" Padding="10" Background="Gray" Foreground="White"/>
     </Grid>
 </Window>

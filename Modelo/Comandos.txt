@@ -1,3 +1,3 @@
 ﻿///Comando para realziar el mapeo automatico sobre la base de datos
 
-Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=citas;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Modelos -f
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=clinica;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Modelos -f
