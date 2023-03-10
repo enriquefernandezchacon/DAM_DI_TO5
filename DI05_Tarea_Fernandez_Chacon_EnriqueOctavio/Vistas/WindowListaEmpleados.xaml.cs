@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DI05_Modelo.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,13 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas
     /// </summary>
     public partial class WindowListaEmpleados : Window
     {
+        List<Empleado> listaEmpleados = new List<Empleado>();
         public WindowListaEmpleados()
         {
             InitializeComponent();
+            ClinicaContext context = new ClinicaContext();
+            listaEmpleados = context.Empleados.ToList();
+            DataGridEmpleados.ItemsSource = listaEmpleados;
         }
         public void Window_Closed(object sender, EventArgs e)
         {

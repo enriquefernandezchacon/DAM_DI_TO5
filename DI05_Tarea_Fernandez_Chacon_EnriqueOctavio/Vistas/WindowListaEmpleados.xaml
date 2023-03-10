@@ -18,7 +18,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nombre" Binding="{Binding Path=Nombre}" Width="*"/>
                 <DataGridTextColumn Header="Apellidos" Binding="{Binding Path=Apellidos}" Width="*"/>
-                <DataGridTextColumn Header="NIF" Binding="{Binding Path=Nif}" Width="*"/>
+                <DataGridTextColumn Header="NIF" Binding="{Binding Path=Dni}" Width="*"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Path=Email}" Width="*"/>
                 <DataGridTextColumn Header="Teléfono" Binding="{Binding Path=Telefono}" Width="*"/>
                 <DataGridTextColumn Header="Puesto" Binding="{Binding Path=Puesto}" Width="*"/>

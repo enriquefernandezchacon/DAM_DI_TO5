@@ -18,8 +18,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Fecha" Binding="{Binding Path=Fecha}" Width="*"/>
                 <DataGridTextColumn Header="Hora" Binding="{Binding Path=Hora}" Width="*"/>
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Path=IdAplicaciontratamientoNavigation.IdClienteNavigation.Nombre}" Width="*"/>
                 <DataGridTextColumn Header="Forma de pago" Binding="{Binding Path=FormaPago}" Width="*"/>
-                <DataGridTextColumn Header="Cliente" Binding="{Binding Path=Cliente.NombreCompleto}" Width="*"/>
                 <DataGridTextColumn Header="Tratamiento" Binding="{Binding Path=Tratamiento.Nombre}" Width="*"/>
                 <DataGridTextColumn Header="Observaciones" Binding="{Binding Path=Observaciones}" Width="*"/>
             </DataGrid.Columns>
