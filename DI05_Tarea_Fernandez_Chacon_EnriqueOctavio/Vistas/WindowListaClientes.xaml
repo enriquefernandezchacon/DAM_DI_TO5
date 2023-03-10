@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas"
         mc:Ignorable="d"
         Title="Lista de Clientes" Height="400" Width="600"
+        Closed="Window_Closed"
         ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>

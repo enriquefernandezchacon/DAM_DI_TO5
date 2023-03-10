@@ -17,24 +17,24 @@
         <Label Grid.Row="1" Content="Bienvenido a la Clínica" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
         <Menu Grid.Row="0">
             <MenuItem Header="_Clientes">
-                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoClienteCommand}"/>
-                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaClientesCommand}"/>
+                <MenuItem Header="_Nuevo" Click="NuevoCliente_Click"/>
+                <MenuItem Header="_Listado" Click="VerClientes_Click"/>
             </MenuItem>
             <MenuItem Header="_Citas">
-                <MenuItem Header="_Nueva" Command="{Binding Path=AbrirFormularioNuevaCitaCommand}"/>
-                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaCitasCommand}"/>
+                <MenuItem Header="_Nueva" Click="NuevaCita_Click"/>
+                <MenuItem Header="_Listado" Click="VerCitas_Click"/>
             </MenuItem>
             <MenuItem Header="_Tratamientos">
-                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoTratamientoCommand}"/>
-                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaTratamientosCommand}"/>
+                <MenuItem Header="_Nuevo" Click="NuevoTratamiento_Click"/>
+                <MenuItem Header="_Listado" Click="VerTratamientos_Click"/>
             </MenuItem>
             <MenuItem Header="_Empleados">
-                <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoEmpleadoCommand}"/>
-                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaEmpleadosCommand}"/>
+                <MenuItem Header="_Nuevo" Click="NuevoEmpleado_Click"/>
+                <MenuItem Header="_Listado" Click="VerEmpleados_Click"/>
             </MenuItem>
             <MenuItem Header="_Aplicaciones de Tratamiento">
-                <MenuItem Header="_Nueva" Command="{Binding Path=AbrirFormularioNuevaAplicacionTratamientoCommand}"/>
-                <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaAplicacionesTratamientoCommand}"/>
+                <MenuItem Header="_Nueva" Click="NuevaAplicacionTratamiento_Click"/>
+                <MenuItem Header="_Listado" Click="VerAplicacionTratamientos_Click"/>
             </MenuItem>
         </Menu>
         <Frame Grid.Row="1" Margin="20" Source="{Binding Path=PaginaActual}"/>

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas"
         mc:Ignorable="d"
+        Closed="Window_Closed"
         Title="Lista de Citas" Height="400" Width="800"
         ResizeMode="NoResize">
     <Grid>

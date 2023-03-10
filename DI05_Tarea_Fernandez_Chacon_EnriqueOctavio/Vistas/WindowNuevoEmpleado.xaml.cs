@@ -26,6 +26,7 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Vistas
         public void Window_Closed(object sender, EventArgs e)
         {
             Close();
+            Owner.Show();
         }
     }
 }
