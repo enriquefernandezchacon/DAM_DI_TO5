@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DI05_Modelo.Modelos;
 
-public partial class CitasContext : DbContext
+public partial class ClinicaContext : DbContext
 {
-    public CitasContext()
+    public ClinicaContext()
     {
     }
 
-    public CitasContext(DbContextOptions<CitasContext> options)
+    public ClinicaContext(DbContextOptions<ClinicaContext> options)
         : base(options)
     {
     }
@@ -27,7 +27,7 @@ public partial class CitasContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=citas;Trusted_Connection=True;");
+        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=clinica;Trusted_Connection=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -66,22 +66,16 @@ public partial class CitasContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("forma_pago");
             entity.Property(e => e.Hora).HasColumnName("hora");
-            entity.Property(e => e.IdCliente).HasColumnName("id_cliente");
-            entity.Property(e => e.IdTratamiento).HasColumnName("id_tratamiento");
+            entity.Property(e => e.IdAplicaciontratamiento).HasColumnName("id_aplicaciontratamiento");
             entity.Property(e => e.Observaciones)
                 .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("observaciones");
 
-            entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.Cita)
-                .HasForeignKey(d => d.IdCliente)
+            entity.HasOne(d => d.IdAplicaciontratamientoNavigation).WithMany(p => p.Cita)
+                .HasForeignKey(d => d.IdAplicaciontratamiento)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Citas_Clientes");
-
-            entity.HasOne(d => d.IdTratamientoNavigation).WithMany(p => p.Cita)
-                .HasForeignKey(d => d.IdTratamiento)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Citas_Tratamientos");
+                .HasConstraintName("FK_Citas_AplicacionTratamientos");
         });
 
         modelBuilder.Entity<Cliente>(entity =>

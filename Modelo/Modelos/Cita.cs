@@ -13,13 +13,9 @@ public partial class Cita
 
     public string FormaPago { get; set; } = null!;
 
-    public int IdCliente { get; set; }
-
-    public int IdTratamiento { get; set; }
+    public int IdAplicaciontratamiento { get; set; }
 
     public string? Observaciones { get; set; }
 
-    public virtual Cliente IdClienteNavigation { get; set; } = null!;
-
-    public virtual Tratamiento IdTratamientoNavigation { get; set; } = null!;
+    public virtual AplicacionTratamiento IdAplicaciontratamientoNavigation { get; set; } = null!;
 }

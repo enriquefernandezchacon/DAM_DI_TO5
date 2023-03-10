@@ -23,11 +23,16 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio
     /// </summary>
     public partial class MainWindow : Window
     {
-        private CitasContext context;
+        private ClinicaContext context;
         public MainWindow()
         {
             InitializeComponent();
-            context = new CitasContext();
+            context = new ClinicaContext();
+        }
+
+        public void VerCitas_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
 
         public void VerClientes_Click(object sender, RoutedEventArgs e)

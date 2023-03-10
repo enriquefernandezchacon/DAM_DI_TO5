@@ -16,6 +16,4 @@ public partial class Cliente
     public string Telefono { get; set; } = null!;
 
     public virtual ICollection<AplicacionTratamiento> AplicacionTratamientos { get; } = new List<AplicacionTratamiento>();
-
-    public virtual ICollection<Cita> Cita { get; } = new List<Cita>();
 }

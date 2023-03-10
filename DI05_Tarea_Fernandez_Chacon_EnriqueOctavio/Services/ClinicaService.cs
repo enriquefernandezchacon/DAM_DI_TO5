@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Services
 {
-    public class CitasService
+    public class ClinicaService
     {
-        private readonly CitasContext _context;
+        private readonly ClinicaContext _context;
 
-        public CitasService(CitasContext context)
+        public ClinicaService(ClinicaContext context)
         {
             _context = context;
         }

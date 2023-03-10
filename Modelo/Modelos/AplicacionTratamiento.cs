@@ -15,6 +15,8 @@ public partial class AplicacionTratamiento
 
     public int Coste { get; set; }
 
+    public virtual ICollection<Cita> Cita { get; } = new List<Cita>();
+
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
 
     public virtual Empleado IdTrabajadorNavigation { get; set; } = null!;

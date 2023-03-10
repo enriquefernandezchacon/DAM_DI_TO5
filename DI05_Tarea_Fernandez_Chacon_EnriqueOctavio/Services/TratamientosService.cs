@@ -7,9 +7,9 @@ namespace DI05_Tarea_Fernandez_Chacon_EnriqueOctavio.Services
 {
     public class TratamientosService
     {
-        private readonly CitasContext _context;
+        private readonly ClinicaContext _context;
 
-        public TratamientosService(CitasContext context)
+        public TratamientosService(ClinicaContext context)
         {
             _context = context;
         }

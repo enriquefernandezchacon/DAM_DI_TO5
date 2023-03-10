@@ -13,9 +13,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Image Grid.Row="0" Source="logo_clinica.png" Width="100" Height="100" Margin="10"/>
+        <Image Grid.Row="2" Source="logo_clinica.png" Width="100" Height="100" Margin="10"/>
         <Label Grid.Row="1" Content="Bienvenido a la Clínica" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
-        <Menu Grid.Row="2">
+        <Menu Grid.Row="0">
             <MenuItem Header="_Clientes">
                 <MenuItem Header="_Nuevo" Command="{Binding Path=AbrirFormularioNuevoClienteCommand}"/>
                 <MenuItem Header="_Listado" Command="{Binding Path=AbrirListaClientesCommand}"/>
